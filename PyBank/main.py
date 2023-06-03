@@ -66,9 +66,9 @@ Total: ${total_amount}
    
 Average Change: ${rounded_average}
  
-Greatest Increase in Profits: {maxdate} {greatestincrease}
+Greatest Increase in Profits: {maxdate} $({greatestincrease})
    
-Greatest Decrease in Profits: {mindate} {greatestdecrease}"""
+Greatest Decrease in Profits: {mindate} $({greatestdecrease})"""
 
 with open("PyBank.txt","w") as f:
     f.write(my_string)

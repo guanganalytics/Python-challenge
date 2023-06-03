@@ -77,6 +77,27 @@ print("Winner: "+str(winner))
 print("")
 print("--------------------------------------------")
 
+my_string=f"""Election Results
 
+--------------------------------------------
+
+Total Votes: {total_votes}
+
+--------------------------------------------
+
+{candidate_list[0]}: {formattedcandidate_0_percentage} ({candidate_0_total})
+
+{candidate_list[1]}: {formattedcandidate_1_percentage} ({candidate_1_total})
+
+{candidate_list[2]}: {formattedcandidate_2_percentage} ({candidate_2_total})
+
+--------------------------------------------
+
+Winner: {winner}
+
+--------------------------------------------"""
+
+with open("PyPoll.txt","w") as f:
+    f.write(my_string)
 
        
